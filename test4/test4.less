@@ -2,7 +2,7 @@
 @detailColorL: #ad5772;
 @detailColorD: #511c37;
 @advHeight: 100px;
-@headingHeight: 150px;
+@headingHeight: 130px;
 
 body {
   min-width: 450px;
@@ -10,6 +10,7 @@ body {
 }
 
 .container {
+  bottom: @advHeight;
   max-width: 1200px;
   width: 100%;
   margin: auto;
@@ -31,37 +32,45 @@ body {
   .description {
     font-size: 20px;
   }
-
-  .contactsButton {
-    font-size: 15px;
-    background-color: @mainColor;
-    border: none;
-  }
 }
 
-.test {
+.box {
   top: @headingHeight;
-  display: grid;
-  grid-template-columns: 60px 1fr 80px;
   padding: 10px;
+  background-color: @mainColor;
 
-  .testLabel {
+  .question {
+    font-size: 27px;
+  }
+
+  .a {
+    border-color: @detailColorD;
+    border-style: solid;
+    border-width: 1px;
+  }
+
+  .answer1, .answer2, .answer3 {
+    border: @mainColor;
+    background-color: @mainColor;
+    width: 100%;
     font-size: 20px;
   }
-
-  .testButton {
-    font-size: 19px;
-    width: 100px;
-    background-color: @mainColor;
-    border: @mainColor;
-  }
 }
 
-.advContainer {
-  position: fixed;
-  bottom: 0;
-  height: @advHeight;
-  width: 100%;
-  background-image: url('images/advertisment.jpeg');
-  //background-repeat: repeat;
+.resultBox {
+  top: @headingHeight;
+  padding: 10px;
+  background-color: @mainColor;
+  text-align: center;
+  border-top-color: @detailColorL;
+  border-top-style: dotted;
+  border-top-width: 2px;
+
+  .resultLabel {
+    font-size: 50px;
+  }
+
+  .res {
+    font-size: 100px;
+  }
 }
