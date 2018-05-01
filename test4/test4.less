@@ -21,9 +21,7 @@ body {
 .heading {
   height: @headingHeight;
   text-align: center;
-  border-bottom-color: @detailColorL;
-  border-bottom-style: dotted;
-  border-bottom-width: 2px;
+  border-bottom: 2px dotted @detailColorL;
 
   .headingLabel {
     font-size: 60px;
@@ -32,6 +30,13 @@ body {
   .description {
     font-size: 20px;
   }
+}
+
+.testHeading {
+  top: @headingHeight;
+  padding: 10px;
+  text-align: center;
+  font-size: 50px;
 }
 
 .box {
@@ -44,9 +49,7 @@ body {
   }
 
   .a {
-    border-color: @detailColorD;
-    border-style: solid;
-    border-width: 1px;
+    border: 1px solid @detailColorD;
   }
 
   .answer1, .answer2, .answer3 {
@@ -62,9 +65,7 @@ body {
   padding: 10px;
   background-color: @mainColor;
   text-align: center;
-  border-top-color: @detailColorL;
-  border-top-style: dotted;
-  border-top-width: 2px;
+  border-top: 2px dotted @detailColorL;
 
   .resultLabel {
     font-size: 50px;

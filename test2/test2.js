@@ -1,7 +1,7 @@
 $(function(){
     var TEMPLATE = $(".questionTemplate").html();
     var RESULT = $(".result").html();
-    var points = 0;
+    var points = 10;
     var answered = 0;
 
     function addResults() {
@@ -13,6 +13,7 @@ $(function(){
         $(".container").append($node);
         $node.hide();
         $node.slideDown(400);
+        window.scrollTo(0, window.innerHeight + window.pageYOffset);
     }
 
     function addQuestion(question, a1, a2, a3, p1, p2, p3) {
@@ -88,12 +89,6 @@ $(function(){
         var $answer3= $node.find(".answer3");
         $answer3.text(a3);
 
-        /*var $img1 = $node.find(".img1");
-        $img1.src = i1;
-        var $img2 = $node.find(".img2");
-        $img2.src = i2;
-        var $img3 = $node.find(".img3");
-        $img3.src = i3;*/
         $node.find(".picturesBox").css("display", "block");
 
         $answer1.click(function () {
@@ -102,7 +97,7 @@ $(function(){
                 clicked = true;
                 $answer1.css("background-color", "#db9541");
                 answered++;
-                if(answered == 9){
+                if(answered == 10){
                     addResults();
                 }
             }
@@ -114,7 +109,7 @@ $(function(){
                 clicked = true;
                 $answer2.css("background-color", "#db9541");
                 answered++;
-                if(answered == 9){
+                if(answered == 10){
                     addResults();
                 }
             }
@@ -126,7 +121,7 @@ $(function(){
                 clicked = true;
                 $answer3.css("background-color", "#db9541");
                 answered++;
-                if(answered == 9){
+                if(answered == 10){
                     addResults();
                 }
             }
@@ -157,7 +152,7 @@ $(function(){
         addQuestion("Дє нє звонЯт, а звОнят?", "У нас на районє", "На Троє", "В шоу Від пацанки До панянки", 5, 0, 0);
     }, 600);
     setTimeout(function () {
-        addQuestion("Хто співає міліон алих роз?", "Єгорка Крід", "Пугачова", "Малахов", 0, 5, 0);
+        addQuestion("Хто співає Міліон Алих Роз?", "Єгорка Крід", "Пугачова", "Малахов", 0, 5, 0);
     }, 700);
     setTimeout(function () {
         addQuestion("Як казав Ніколай Пєтровіч Воронін: … сіла", "Молдавськая", "Руссська", "Єгіпєтская", 0, 0, 5);

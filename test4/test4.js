@@ -13,6 +13,7 @@ $(function(){
         $(".container").append($node);
         $node.hide();
         $node.slideDown(400);
+        window.scrollTo(0, window.innerHeight + window.pageYOffset);
     }
 
     function addQuestion(question, a1, a2, a3, p1, p2, p3) {
