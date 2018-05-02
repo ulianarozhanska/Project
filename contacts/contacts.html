@@ -15,7 +15,7 @@
 <body>
 <div class="container">
     <div class="heading">
-        <div class="headingLabel"onClick='location.href="index.html"'>Pro.TEST.anT</div>
+        <div class="headingLabel"onClick='location.href="../index.html"'>Pro.TEST.anT</div>
         <div class="description">
             Пройдітє наші тести і ви поймете про себе всьо!
         </div>
@@ -23,7 +23,8 @@
     <div class="center">
         <div class=" col-md-6 about_us">
             <span class="names"><b>ПРИМАТИ</b>  <br><i>Пашковець Марія </i> <br> <i>Рожанська Уляна</i> <br> </span>
-            <span class="e-mails"><i>pashkovec.m4170@gmail.com </i><br> <i>ulianarozhanska@gmail.com </i> <br></span>
+            <span class="e-mails"><i><a href="mailto:pashkovec.m4170@gmail.com">pashkovec.m4170@gmail.com </a></i><br>
+                <i><a href="mailto: ulianarozhanska@gmail.com">ulianarozhanska@gmail.com</a></i> <br></span>
             <span class="address"><i>103, вулиця Кирилівська, Київ, 02000</i></span>
         </div>
 
@@ -37,7 +38,6 @@
                 center: uluru
             });
             var image = 'images/mapIcon.png';
-
             var marker = new google.maps.Marker({
                 position: uluru,
                 map: map,
@@ -51,10 +51,16 @@
             <div class="">
             </div>
         </div>
-        <div class="money">Якщо бажаєтє пожервувать нам долярів на сплату незарахів, пишіть на пошту</div>
+
+        <div class="money">
+            Якщо бажаєтє пожервувать нам долярів на сплату незарахів, пишіть на пошту
+        </div>
     </div>
 </div>
 
+<div class="advContainer" onClick='location.href="memasyan/memasyan.html"'>
+    <div class="l">Трошки ненав'язливої реклами (Тисни, якщо хочеш дізнатися більше)</div>
+</div>
 
 <!-- jQuery JavaScript -->
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
@@ -62,7 +68,7 @@
 <!--Bootsrap JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
-<script type="text/javascript"  src="assets/js/contacts.js"> </script>
+<script type="text/javascript"  src="contacts.js"> </script>
 
 </body>
 </html>

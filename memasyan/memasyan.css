@@ -1,0 +1,18 @@
+.mem{
+    position: fixed;
+    top: 130px;
+    left: 0px ;
+    right: 0px;
+    margin: auto;
+    height: 500px;
+    width: 600px;
+}
+body{
+    background: #f9dde2;
+}
+.headingLabel {
+    text-align: center;
+    font-size: 60px;
+    height: 120px;
+    border-bottom: 2px dotted #511c37;
+}

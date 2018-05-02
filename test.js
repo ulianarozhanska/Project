@@ -1,4 +1,4 @@
-$(function () {
+$(function(){
     var TEMPLATE = $(".questionTemplate").html();
     var RESULT = $(".result").html();
     var points = 0;
@@ -29,40 +29,40 @@ $(function () {
         var $answer2 = $node.find(".answer2");
         $answer2.text(a2);
 
-        var $answer3 = $node.find(".answer3");
+        var $answer3= $node.find(".answer3");
         $answer3.text(a3);
 
         $answer1.click(function () {
-            if (!clicked) {
+            if(!clicked) {
                 points += p1;
                 clicked = true;
                 $answer1.css("background-color", "#db9541");
                 answered++;
-                if (answered == 10) {
+                if(answered == 10){
                     addResults();
                 }
             }
         })
 
         $answer2.click(function () {
-            if (!clicked) {
+            if(!clicked) {
                 points += p2;
                 clicked = true;
                 $answer2.css("background-color", "#db9541");
                 answered++;
-                if (answered == 10) {
+                if(answered == 10){
                     addResults();
                 }
             }
         })
 
         $answer3.click(function () {
-            if (!clicked) {
+            if(!clicked) {
                 points += p3;
                 clicked = true;
                 $answer3.css("background-color", "#db9541");
                 answered++;
-                if (answered == 10) {
+                if(answered == 10){
                     addResults();
                 }
             }
@@ -72,33 +72,4 @@ $(function () {
         $node.hide();
         $node.slideDown(400);
     }
-
-    addQuestion("", "", "", "", 0, 0, 0);
-    setTimeout(function () {
-        addQuestion("", "", "", "", 0, 0, 0);
-    }, 100);
-    setTimeout(function () {
-        addQuestion("", "", "", "", 0, 0,0);
-    }, 200);
-    setTimeout(function () {
-        addQuestion("", "", "", "", 0, 0, 00);
-    }, 300);
-    setTimeout(function () {
-        addQuestion("", "", "", "", 0, 0, 0);
-    }, 400);
-    setTimeout(function () {
-        addQuestion("", "", "", "", 0, 0, 0);
-    }, 500);
-    setTimeout(function () {
-        addQuestion("", "", "", "", 0, 0, 0);
-    }, 600);
-    setTimeout(function () {
-        addQuestion("", "", "", "", 0, 0, 0);
-    }, 700);
-    setTimeout(function () {
-        addQuestion("", "", "", "", 0, 0, 0);
-    }, 800);
-    setTimeout(function () {
-        addQuestion("", "", "", "", 0, 0, 0);
-    }, 900);
 });
